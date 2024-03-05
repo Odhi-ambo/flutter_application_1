@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/views/custom_text.dart';
-import 'package:flutter_application_1/views/custom_textfield.dart';
-import 'package:flutter_application_1/views/dashboard.dart';
+import 'package:flutter_application_1/configs/constants.dart';
+import 'package:flutter_application_1/views/widgets/custom_text.dart';
+import 'package:flutter_application_1/views/widgets/custom_textfield.dart';
+import 'package:flutter_application_1/views/screens/dashboard.dart';
+import 'package:get/get.dart';
 
 class Login extends StatelessWidget{
   const Login ({super.key});
@@ -69,13 +71,7 @@ class Login extends StatelessWidget{
                   padding:  const EdgeInsets.all(16.0),
                   child: ElevatedButton(  
                                       
-                    onPressed: () {
-                      // Action to be performed when the button is pressed
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Dashboard()));
-                      
-                      print('Button Pressed!');
-                      // You can add any functionality here
-                    },
+                    onPressed: () => Get.toNamed("/home"),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue,
                     ),
@@ -84,7 +80,16 @@ class Login extends StatelessWidget{
                 ),
               ],
             ),
-           const CustomText(label: "Don't have an account? Sign up"),
+           InkWell(
+            onTap: () => Get.toNamed("/registration"),
+            
+            child: Container(
+              decoration: const BoxDecoration( 
+                border: Border( 
+                  bottom: BorderSide(color: appBlackColor)
+                )
+              ),
+              child: const CustomText(label: "Don't have an account? Sign up"))),
               
           ]),
         ),

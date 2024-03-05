@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/configs/constants.dart';
-import 'package:flutter_application_1/views/custom_text.dart';
+import 'package:flutter_application_1/views/widgets/custom_text.dart';
 
 class CustomButton extends StatelessWidget {
   final String label;
@@ -11,7 +11,7 @@ class CustomButton extends StatelessWidget {
     required this.label,
     this.buttonColor = primaryColor,
     this.action,
-    Key? key, required Null Function() onPressed,
+    Key? key, 
   }) : super(key: key);
 
   @override

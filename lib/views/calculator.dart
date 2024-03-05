@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/configs/constants.dart';
 import 'package:flutter_application_1/controllers/calculatorcontroller.dart';
-import 'package:flutter_application_1/views/custom_text.dart';
-import 'package:flutter_application_1/views/custom_textfield.dart';
+import 'package:flutter_application_1/views/widgets/custom_text.dart';
+import 'package:flutter_application_1/views/widgets/custom_textfield.dart';
 import 'package:get/get.dart';
 
 /*class Calculator extends StatefulWidget {

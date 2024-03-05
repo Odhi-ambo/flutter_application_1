@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/configs/constants.dart';
-import 'package:flutter_application_1/views/custom_text.dart';
+import 'package:flutter_application_1/views/widgets/custom_text.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -10,14 +10,14 @@ class Dashboard extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Dashboard"),
-        backgroundColor: primaryColor,
+        backgroundColor: Colors.blue,
         foregroundColor: appWhiteColor,
         centerTitle: true,
         actions: const [
           Icon(Icons.refresh),
         ],
       ),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

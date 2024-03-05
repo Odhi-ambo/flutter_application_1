@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/views/login.dart';
+import 'package:flutter_application_1/utils/routes.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    home: Login(),
+  runApp(
+     GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+
+      initialRoute: "/",
+      getPages: Routes.routes,   
     
-    debugShowCheckedModeBanner: false,
   )); 
 }
 
