@@ -12,10 +12,13 @@ import 'package:get/get.dart';
   State<Calculator> createState() => _CalculatorState();
 }*///to be deleted
 
+// ignore: must_be_immutable
 class Calculator extends StatelessWidget {
   TextEditingController aController = TextEditingController();
   TextEditingController bController = TextEditingController();
   CalculatorController calculatorController = Get.put(CalculatorController());
+
+  Calculator({super.key});
  
   @override
   Widget build(BuildContext context) {
@@ -23,18 +26,18 @@ class Calculator extends StatelessWidget {
       
       body:Column(
         children: [
-      CustomText(
+      const CustomText(
         label:"Enter A"),
       CustomTextField(controller:aController, 
     ),
-      SizedBox(height: 10,),
+     const SizedBox(height: 10,),
 
       
-      CustomText(
+      const CustomText(
         label:"Enter B"),
       CustomTextField(controller:bController,),
       
-      SizedBox(
+      const SizedBox(
         height:10,
       ),
 MaterialButton(
@@ -50,10 +53,10 @@ MaterialButton(
     
   },
   height:50,
-child:Text("Calculate"),
 color: primaryColor,
+child:const Text("Calculate"),
 ),
-SizedBox(
+const SizedBox(
   height: 30,
   ),
 Obx(() =>  CustomText(label: "The Sum Of:${calculatorController.A.value} & ${calculatorController.B.value} is ${calculatorController.sum.value}")),

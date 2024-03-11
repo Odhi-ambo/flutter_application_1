@@ -32,7 +32,7 @@ class CustomTextField extends StatelessWidget {
           decoration: InputDecoration(
             labelText: hintMessage, // Added label
             hintText: hintMessage, // Added hint
-            border: OutlineInputBorder(),
+            border: const OutlineInputBorder(),
             prefixIcon: Icon(prefixIcon), // Use the provided prefixIcon
             suffixIcon: GestureDetector(
               child: Icon(loginController.isHidden.value

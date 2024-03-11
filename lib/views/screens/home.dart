@@ -36,7 +36,8 @@ class Home extends StatelessWidget {
       ],
       onTap: (index){
         homeController.updateSelectedPage(index);
-        print("Clicked on tab $index");
+        //print
+        ("Clicked on tab $index");
         
       },
       ),

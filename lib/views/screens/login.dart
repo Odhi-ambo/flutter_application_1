@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/configs/constants.dart';
 import 'package:flutter_application_1/views/widgets/custom_text.dart';
 import 'package:flutter_application_1/views/widgets/custom_textfield.dart';
-import 'package:flutter_application_1/views/screens/dashboard.dart';
 import 'package:get/get.dart';
 
 class Login extends StatelessWidget{
